@@ -1,0 +1,75 @@
+local player = game.Players.LocalPlayer local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() local Window = OrionLib:MakeWindow({Name = "baller v1 Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"}) --[[ Name = - The name of the UI. HidePremium = - Whether or not the user details shows Premium status or not. SaveConfig = - Toggles the config saving in the UI. ConfigFolder = - The name of the folder where the configs are saved. IntroEnabled = false - Whether or not to show the intro animation. IntroText = - Text to show in the intro animation. IntroIcon = - URL to the image you want to use in the intro animation. Icon = - URL to the image you want displayed on the window. CloseCallback = - Function to execute when the window is closed. ]] local Tab = Window:MakeTab({ Name = "Player speeds", Icon = "rbxassetid://4483345998", PremiumOnly = false }) --[[ Name = - The name of the tab. Icon = - The icon of the tab. PremiumOnly = - Makes the tab accessible to Sirus Premium users only. local Tab = Window:MakeTab({
+	Name = "Script hub",
+	Icon = "rbxassetid://1003082350",
+	PremiumOnly = false
+}) local Section = Tab:AddSection({
+	Name = "Script"
+}) ]] local Section = Tab:AddSection({ Name = "Player" }) --[[ Name = - The name of the section. ]] OrionLib:MakeNotification({ Name = "sup bro and welcome player", Content = "Welcome to baller v1 hub!", Image = "rbxassetid://1003082350", Time = 5 }) --[[ Title = - The title of the notification. Content = - The content of the notification. Image = - The icon of the notification. Time = - The duration of the notfication. ]] Tab:AddButton({ Name = "High Speed", Callback = function() player.Character.Humanoid.WalkSpeed = 500 end }) --[[ Name = - The name of the button. Callback = - The function of the button. ]] Tab:AddButton({ Name = "High Jumppower", Callback = function() player.Character.Humanoid.JumpPower = 100 end }) --[[ Name = - The name of the button. Callback = - The function of the button. ]] Tab:AddButton({ Name = "Low Gravity", Callback = function() game.Workspace.Gravity = 10 end }) Tab:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+		print(Value)
+	end	  
+}) local Tab = Window:MakeTab({
+	Name = "script hub",
+	Icon = "rbxassetid://1003082350",
+	PremiumOnly = false
+}) local Section = Tab:AddSection({
+	Name = "script"
+}) Tab:AddButton({
+	Name = "pp script!",
+	Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/k4sii/FE-PP/main/k4sii.lua",true))()     
+  	end    
+}) Tab:AddButton({
+	Name = "animation script. fe (or not)",
+	Callback = function()
+ loadstring(game:HttpGet('https://pastebin.com/raw/0MLPL32f'))()
+  	end    
+}) Tab:AddButton({
+	Name = "Fling GUI!",
+	Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+  	end    
+}) 
+Tab:AddButton({
+	Name = "frakture ss!",
+	Callback = function()
+ loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FraktureSS-4779"))()
+  	end    
+}) 
+Tab:AddButton({
+	Name = "fe anti fall",
+	Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/AntiFall/main/Script"))()
+  	end    
+}) 
+Tab:AddButton({
+	Name = "vhub",
+	Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/V31nc/2642/Created/VHub"))()
+  	end    
+}) 
+Tab:AddButton({
+	Name = "freecam",
+	Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/CameraSpy/main/Script", true))()
+  	end    
+}) 
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+}) Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+}) 
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})  --[[ Name = - The name of the button. Callback = - The function of the button. ]] --[[ Name = - The name of the button. Callback = - The function of the button. ]]
